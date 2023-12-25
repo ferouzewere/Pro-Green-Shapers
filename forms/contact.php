@@ -7,13 +7,24 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'jwalcotto09@gmail.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
   } else {
     die( 'Unable to load the "PHP Email Form" Library!');
   }
+
+  // Validate email address
+if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    die('Invalid email address');
+}
+
+  // Sanitize user inputs
+  $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+  $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+  $subject = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+  $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
