@@ -606,6 +606,7 @@ section {
 --------------------------------------------------------------*/
 .featured-services {
   padding: 20px 0;
+  align-items: center;
 }
 
 .featured-services .icon-box {
