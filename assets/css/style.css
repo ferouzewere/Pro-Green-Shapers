@@ -1138,8 +1138,8 @@ section {
 
 .team .member:hover img {
   /* transform: scale(1.1); */
-  transition: ease-in-out;
-  animation: pulse 3s infinite; /* Use the pulse animation on hover */
+  transition: 0.5s ease-in-out;
+  animation: pulse 1s infinite; /* Use the pulse animation on hover */
 }
 
 /* Pulse Animation */
@@ -1148,17 +1148,9 @@ section {
     transform: scale(1);
   }
 
-    25% {
-      transform: scale(1.025);
-    }
-
   50% {
-    transform: scale(1.05);
+    transform: scale(1.0);
   }
-
-    75% {
-      transform: scale(1.075);
-    }
 
   100% {
     transform: scale(1);
