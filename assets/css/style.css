@@ -684,7 +684,8 @@ section {
 }
 
 .why-us .content-item {
-  padding: 40px;
+  padding: 20px;
+  /* Adjusted padding for smaller screens */
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
   margin: -1px;
@@ -698,22 +699,26 @@ section {
 }
 
 .why-us .content-item h4 {
-  font-size: 26px;
+  font-size: 20px;
+  /* Adjusted font size for smaller screens */
   font-weight: 300;
   padding: 0;
-  margin: 20px 0;
+  margin: 10px 0;
+  /* Adjusted margin for smaller screens */
 }
 
 .why-us .content-item p {
   color: #aaaaaa;
-  font-size: 15px;
+  font-size: 14px;
+  /* Adjusted font size for smaller screens */
   margin: 0;
   padding: 0;
 }
 
 @media (max-width: 768px) {
   .why-us .content-item {
-    padding: 40px 0;
+    padding: 20px 0;
+    /* Adjusted padding for smaller screens */
   }
 }
 
