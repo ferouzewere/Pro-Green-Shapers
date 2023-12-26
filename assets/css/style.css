@@ -687,7 +687,7 @@ section {
   padding: 40px;
   border-left: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  margin: -1px;
+  margin: auto;
 }
 
 .why-us .content-item span {
