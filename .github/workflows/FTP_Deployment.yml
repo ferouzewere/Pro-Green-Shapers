@@ -1,0 +1,25 @@
+name: Deployment Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: FTP-Deployment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: FTP-Deployment
+        env:
+          SERVER: ${{ secrets.FTP_SERVER }}
+          USERNAME: ${{ secrets.FTP_USERNAME }}
+          PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          # Use the environment variables to deploy your application
+          # Example deployment command:
+          # deploy_script.sh $SERVER $USERNAME $PASSWORD
