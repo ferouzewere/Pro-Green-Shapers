@@ -13,4 +13,4 @@ jobs:
       with:
         server: ftp.progreenshapers.org
         username: krpwgbax
-        password: ${{ secrets.ftp_PASSWORD }}
+        password: ${{ secrets.FTP_PASSWORD }}
